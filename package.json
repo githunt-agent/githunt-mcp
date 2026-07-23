@@ -1,0 +1,38 @@
+{
+  "name": "githunt-mcp",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "MCP server for GitHunt's GitHub talent search API",
+  "license": "MIT",
+  "bin": {
+    "githunt-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "tools.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githunt-agent/githunt-mcp.git"
+  },
+  "homepage": "https://docs.githunt.ai",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "github",
+    "developer-search",
+    "recruiting",
+    "githunt"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
