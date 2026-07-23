@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.githunt-agent/githunt-mcp",
+  "description": "Search, rank, and analyze GitHub developers for tech recruiting via GitHunt's API.",
+  "repository": {
+    "url": "https://github.com/githunt-agent/githunt-mcp",
+    "source": "github"
+  },
+  "version": "0.2.1",
+  "websiteUrl": "https://docs.githunt.ai",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "githunt-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUNT_API_KEY",
+          "description": "GitHunt API key from https://githunt.ai/account",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "GITHUNT_API_URL",
+          "description": "API base URL (default https://api.githunt.ai)",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.githunt.ai/mcp"
+    }
+  ]
+}
