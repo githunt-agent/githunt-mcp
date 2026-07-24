@@ -11,7 +11,7 @@
  * over the other; `backend/test/unit/mcpTools.test.js` fails on any drift.
  */
 
-export const SERVER_VERSION = '0.2.0';
+export const SERVER_VERSION = '0.2.1';
 
 const AVAILABLE_ROLES =
   'fullstack, frontend, backend, mobile, devops, ai-engineer, ai-orchestrator, ' +
